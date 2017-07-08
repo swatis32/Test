@@ -70,12 +70,18 @@
     <None Include="NotCSharp\Python\.gdbinit" />
     <None Include="NotCSharp\Python\findFirstSubstringOccurrence.py" />
     <None Include="NotCSharp\Python\MatrixElementsInSpiralOrder.py" />
+    <None Include="NotCSharp\Python\MaxPairProduct.py" />
+    <None Include="NotCSharp\Python\MultiplyTwoStrings.py" />
+    <None Include="NotCSharp\Python\NextLarger.py" />
     <None Include="NotCSharp\Python\PrimeSum2.py" />
+    <None Include="NotCSharp\Python\RepeatedDNASequences.py" />
     <None Include="NotCSharp\Python\ReverseSentence.py" />
     <None Include="NotCSharp\Python\ReverseVowelsOfString.py" />
+    <None Include="NotCSharp\Python\SimplifyPath.py" />
     <None Include="NotCSharp\Python\SubsetSum.py" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DataStructures\" />
     <Folder Include="NotCSharp\Java\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
