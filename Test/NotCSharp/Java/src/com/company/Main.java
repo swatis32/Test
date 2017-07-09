@@ -8,7 +8,10 @@ public class Main {
         int x = 1;
         for (int i = 0; i < 10; i++)
         {
-            System.out.print(i);
+            System.out.println(i);
         }
+
+        Sample xx = new Sample();
+        xx.SampleFunc();
     }
 }
