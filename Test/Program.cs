@@ -11,6 +11,7 @@ namespace Test
       
         static void Main(string[] args)
         {
+            RemoveKFromList.RemoveKFromListMain();
             TripletSum.tripletSumMain();
             SubsetSum.subsetSumMain();
             RotateImage.rotateImageMain(); // Done

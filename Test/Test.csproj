@@ -49,6 +49,7 @@
     <Compile Include="ProductExceptSelf.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveKFromList.cs" />
     <Compile Include="ReverseInteger.cs" />
     <Compile Include="RotateImage.cs" />
     <Compile Include="SortByString.cs" />
