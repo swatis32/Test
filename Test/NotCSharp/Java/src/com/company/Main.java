@@ -7,6 +7,10 @@ public class Main {
     public static void main(String[] args)
     {
 	    // write your code here
+        BottomViewBinaryTree.bottomViewBinaryTreeMain();
+        FullBinaryTree.isFullBinaryTreeMain();
+        MaxPathSum.maxPathSumMain();
+        MinDepthBinaryTree.minDepthBinaryTreeMain();
         IsSubTree.isSubTreeMain();
         FindProfession.findProfessionMain();
         // IsTreeSymmetric.isTreeSymmetricMain();
