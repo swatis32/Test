@@ -7,6 +7,8 @@ public class Main {
     public static void main(String[] args)
     {
 	    // write your code here
+        Djikstras.djikstrasMain();
+        BinaryTreeTraversal.binaryTreeTraversalMain();
         BottomViewBinaryTree.bottomViewBinaryTreeMain();
         FullBinaryTree.isFullBinaryTreeMain();
         MaxPathSum.maxPathSumMain();

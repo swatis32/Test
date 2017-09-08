@@ -7,10 +7,12 @@ import java.util.ResourceBundle;
 
 /**
  * http://www.geeksforgeeks.org/bottom-view-binary-tree/
+ * http://algorithms.tutorialhorizon.com/print-the-bottom-view-of-the-binary-tree/
  */
 public class BottomViewBinaryTree
 {
     static ArrayList<Integer> result = new ArrayList<>();
+    // This is an incorrect solution
     public static void bottomViewBinaryTree(Tree<Integer> tree)
     {
         if (tree == null)
