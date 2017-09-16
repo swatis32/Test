@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="04b6fd1a-652e-4943-a9f1-b301f161c334" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/NotCSharp/Java/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Test/NotCSharp/Java/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/NotSolved.txt" afterPath="$PROJECT_DIR$/Test/NotSolved.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/Program.cs" afterPath="$PROJECT_DIR$/Test/Program.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Test/Test.csproj" afterPath="$PROJECT_DIR$/Test/Test.csproj" />
     </list>
@@ -401,7 +400,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-14" y="-14" width="2726" height="1648" extended-state="7" />
+    <frame x="-14" y="-14" width="2726" height="1648" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24573758" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
