@@ -55,6 +55,7 @@
     <Compile Include="SortByString.cs" />
     <Compile Include="SortedSquaredArray.cs" />
     <Compile Include="SortingAlgos.cs" />
+    <Compile Include="StringPermutation.cs" />
     <Compile Include="StringReformatting.cs" />
     <Compile Include="StrStr.cs" />
     <Compile Include="SubsetSum.cs" />

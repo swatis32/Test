@@ -11,6 +11,7 @@ namespace Test
       
         static void Main(string[] args)
         {
+            StringPermutation.StringPermutationMain(); // Done
             RemoveKFromList.RemoveKFromListMain();
             TripletSum.tripletSumMain();
             SubsetSum.subsetSumMain();
