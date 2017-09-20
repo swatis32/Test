@@ -1,13 +1,11 @@
+package com.company;
+
 import java.util.ArrayList;
 
 /**
  * Created by abhisha on 9/11/2017.
  */
-class Node {
-    int data;
-    Node left;
-    Node right;
-}
+
 public class CheckBST
 {
     public static ArrayList<Integer> list = new ArrayList<>();

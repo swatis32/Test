@@ -1,12 +1,12 @@
 package com.company;
 
-import sun.security.x509.IssuerAlternativeNameExtension;
-
 public class Main {
 
-    public static void main(String[] args)
+    public static void main(String[] args) throws  Exception
     {
 	    // write your code here
+        MinHeap.minHeapMain();
+        MaxHeap.maxHeapMain();
         ReverseArraySpecialChar.reverseArraySpecialCharMain();
         Djikstras.djikstrasMain();
         BinaryTreeTraversal.binaryTreeTraversalMain();
