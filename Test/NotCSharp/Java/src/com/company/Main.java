@@ -5,6 +5,9 @@ public class Main {
     public static void main(String[] args) throws  Exception
     {
 	    // write your code here
+        LeftViewBinaryTree.leftViewBinaryTreeMain();
+        BottomViewBinaryTree.bottomViewBinaryTreeMain();
+        RunningMedian.runningMedianMain();
         MinHeap.minHeapMain();
         MaxHeap.maxHeapMain();
         ReverseArraySpecialChar.reverseArraySpecialCharMain();

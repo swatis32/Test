@@ -46,6 +46,7 @@ public class MinHeap
         // Now place this in the right position
         int parent = size/2;
         int idx = size;
+        if (size == 1) return;
         while (heap[parent] > heap[idx])
         {
             swap(parent, idx);
@@ -61,6 +62,15 @@ public class MinHeap
         size--;
         int idx = 0;
         int parent = 1;
+        if (getRightChildIndex(parent) > size)
+        {
+            if (getLeftChildIndex(parent) == size && heap[getLeftChildIndex(parent)] < heap[parent])
+            {
+                swap(parent, getLeftChildIndex(parent));
+                return;
+            }
+            if (getLeftChildIndex(parent) > size) return;
+        }
         while ((heap[parent] > heap[getLeftChildIndex(parent)] || heap[parent] > heap[getRightChildIndex(parent)]))
         {
             boolean leftSmaller = heap[parent] > heap[getLeftChildIndex(parent)];
@@ -79,9 +89,11 @@ public class MinHeap
             }
             swap(idx, parent);
             parent = idx;
-            if (getRightChildIndex(parent) > size || getLeftChildIndex(parent) > size) break;
+            if (getRightChildIndex(parent) > size || getLeftChildIndex(parent) > size)
+            {
+                break;
+            }
         }
-
     }
 
     public int getLeftChildIndex(int currIndex)
@@ -123,6 +135,7 @@ public class MinHeap
 
     public static void minHeapMain() throws Exception
     {
+        System.out.println("Starting next test");
         MinHeap h = new MinHeap();
         h.insert(1);
         h.printHeap();
@@ -149,6 +162,7 @@ public class MinHeap
         h.insert(0);
         h.printHeap();
 
+        System.out.println("Starting next test");
         // second test
         h = new MinHeap();
         h.insert(10);
@@ -172,6 +186,24 @@ public class MinHeap
         h.insert(1);
         h.printHeap();
         h.deleteMin();
+        h.printHeap();
+
+        System.out.println("Starting next test");
+        // third test
+        h = new MinHeap();
+        h.insert(1);
+        h.printHeap();
+        h.insert(-1);
+        h.printHeap();
+        h.insert(5);
+        h.printHeap();
+        h.deleteMin();
+        h.printHeap();
+        h.insert(100);
+        h.printHeap();
+        h.insert(4);
+        h.printHeap();
+        h.insert(4);
         h.printHeap();
     }
 }
