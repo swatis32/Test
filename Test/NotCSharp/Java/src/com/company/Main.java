@@ -4,7 +4,10 @@ public class Main {
 
     public static void main(String[] args) throws  Exception
     {
+        // Sample sample = new Sample();
+        // sample.sampleFunc();
 	    // write your code here
+        LIS.lisMain(null);
         LeftViewBinaryTree.leftViewBinaryTreeMain();
         BottomViewBinaryTree.bottomViewBinaryTreeMain();
         RunningMedian.runningMedianMain();
@@ -24,7 +27,6 @@ public class Main {
         // PrintKDistance.printKDistanceMain();
         // SortLinkedList.sortLinkedListMain();
         // AddTwoHugeNumbers.addTwoHugeNumbersMain();
-        // Sample sample = new Sample();
-        // sample.sampleFunc();
+
     }
 }
