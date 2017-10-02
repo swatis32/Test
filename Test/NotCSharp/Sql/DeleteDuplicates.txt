@@ -1,0 +1,31 @@
+
+https://leetcode.com/problems/delete-duplicate-emails/description/
+
+
+select Min(p1.Id) as Id, p1.Email from Person as p1 group by p1.Email order by p1.Id asc
+
++----+------------------+
+| Id | Email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
+| 3  | john@example.com |
++----+------------------+
+Id is the primary key column for this table.
+
+Result should be
++----+------------------+
+| Id | Email            |
++----+------------------+
+| 1  | john@example.com |
+| 2  | bob@example.com  |
++----+------------------+
+
+Alternatively
+delete from Person where Id not in (select Min(p1.Id) from Person as p1 group by p1.Email order by p1.Id asc)
+
+Accepted soln
+DELETE p1
+FROM Person p1, Person p2
+WHERE p1.Email = p2.Email AND
+p1.Id > p2.Id

@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CountSmallerAfterNumber.cs" />
     <Compile Include="BFS.cs" />
     <Compile Include="GoodStringCount.cs" />
     <Compile Include="IsListPalindrome.cs" />
