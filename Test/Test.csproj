@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="CountSmallerAfterNumber.cs" />
     <Compile Include="BFS.cs" />
+    <Compile Include="CountSmallerAfterNumber2.cs" />
     <Compile Include="GoodStringCount.cs" />
     <Compile Include="IsListPalindrome.cs" />
     <Compile Include="ProductExceptSelf.cs" />
@@ -67,6 +68,7 @@
     <Compile Include="TripletSum.cs" />
     <Compile Include="VisiblePoints.cs" />
     <Compile Include="WordLadder.cs" />
+    <Compile Include="WordSearch.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

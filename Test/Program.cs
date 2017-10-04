@@ -11,6 +11,8 @@ namespace Test
       
         static void Main(string[] args)
         {
+            WordSearch.wordSearchMain();
+            CountSmallerAfterNumber2.CountSmallerAfterNumber2Main();
             CountSmallerAfterNumber.countSmallerMain();
             BFS.BFSMain(null);
             StringPermutation.StringPermutationMain(); // Done
