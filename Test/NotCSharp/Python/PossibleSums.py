@@ -24,6 +24,8 @@ def possibleSums2(coins, quantity):
     return len(sum_set)
 
 # from stack overflow: https://stackoverflow.com/questions/43642133/complete-search-algorithm-for-combinations-of-coins
+
+
 def possibleSums(coins, quantity):
     maximum = sum((map(lambda t: t[0] * t[1], zip(coins, quantity))))
 

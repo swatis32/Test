@@ -3,7 +3,7 @@ package com.company;
 import java.util.ArrayList;
 
 /**
- * Created by abhisha on 9/11/2017.
+ * https://www.hackerrank.com/challenges/ctci-is-binary-search-tree/problem
  */
 
 public class CheckBST

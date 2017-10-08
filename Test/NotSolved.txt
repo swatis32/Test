@@ -1,5 +1,6 @@
 http://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 https://www.hackerrank.com/challenges/ctci-contacts/problem
+https://www.youtube.com/watch?v=AXjmTQ8LEoI [Tries - simple explanation]
 http://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
 http://www.geeksforgeeks.org/?p=12635
 https://discuss.leetcode.com/topic/31162/mergesort-solution/11
@@ -7,3 +8,5 @@ https://leetcode.com/problems/word-search/description/
 https://leetcode.com/problems/perfect-squares/description/
 https://www.youtube.com/watch?v=P8Xa2BitN3I (look at 6:25)
 http://www.geeksforgeeks.org/?p=12635
+https://www.hackerrank.com/challenges/ctci-merge-sort/problem
+https://www.hackerrank.com/challenges/ctci-coin-change/problem

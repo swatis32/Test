@@ -1,4 +1,6 @@
 # http://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/
+
+
 def allPalindromicPartitions(a):
     lena = len(a)
     partitions = list()
@@ -30,4 +32,36 @@ def checkIfStringIsPalindrome(b):
 
 
 allPalindromicPartitions('nitin')
+
+# http://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/
+# Watch out below for a very imp concept - in reversed function!!
+
+# Not optimal - this is O(n2)
+
+
+def all_palindromes(arr):
+    arr = list(arr)
+    result = []
+    i = 2
+    while i <= len(arr):
+        j = 0
+        while j + i <= len(arr):
+            temp = arr[j:j + i]
+            if is_palindrome(temp):
+                result.append(''.join(temp))
+            j += 1
+        i += 1
+
+    for i in arr:
+        result.append(i)
+
+    return result
+
+
+def is_palindrome(temp):
+    # YOU MUST CONVERT REVERSED BACK TO A LIST, OTHERWISE THIS RETURNS FALSE
+    return temp == list(reversed(temp))
+
+
+print(all_palindromes("nitin"))
 

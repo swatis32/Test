@@ -205,6 +205,7 @@ class Heap
 
 }
 
+// Pretty sure this works, however, CTCI says its the wrong answer
 public class RunningMedian {
     static Heap minHeapofBiggerEle = new Heap();
     static Heap maxHeapOfSmallerEle = new Heap();
