@@ -48,19 +48,19 @@ def triplet_sum(arr, sumval):
         k = len(arr) - 1
         if j == k:
             continue
-        while (j < k):
+        while j < k:
             # print("Combo is: ", arr[i], arr[j], arr[k])
             if sumval > arr[i] + arr[j] + arr[k]:
                 count += 1
             j += 1
-            if (j == k):
+            if j == k:
                 j = i + 1
                 k -= 1
 
     return count
 
 print("START")
-print(triplet_sum([10,11,12,13,1,2,3,4,14,15,16,17], 2000))
+print(triplet_sum([10, 11, 12, 13, 1, 2, 3, 4, 14, 15, 16, 17], 2000))
 
 
 '''

@@ -10,3 +10,4 @@ https://www.youtube.com/watch?v=P8Xa2BitN3I (look at 6:25)
 http://www.geeksforgeeks.org/?p=12635
 https://www.hackerrank.com/challenges/ctci-merge-sort/problem
 https://www.hackerrank.com/challenges/ctci-coin-change/problem
+http://www.geeksforgeeks.org/generate-all-possible-sorted-arrays-from-alternate-elements-of-two-given-arrays/
