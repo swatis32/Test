@@ -11,3 +11,5 @@ http://www.geeksforgeeks.org/?p=12635
 https://www.hackerrank.com/challenges/ctci-merge-sort/problem
 https://www.hackerrank.com/challenges/ctci-coin-change/problem
 http://www.geeksforgeeks.org/generate-all-possible-sorted-arrays-from-alternate-elements-of-two-given-arrays/
+Look up set operations in file SmallestNumberSubset.py
+http://www.geeksforgeeks.org/np-completeness-set-1/

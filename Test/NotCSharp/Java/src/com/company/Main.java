@@ -7,6 +7,7 @@ public class Main {
         // Sample sample = new Sample();
         // sample.sampleFunc();
 	    // write your code here
+        HeapSort.main(null);
         LIS.lisMain(null);
         LeftViewBinaryTree.leftViewBinaryTreeMain();
         BottomViewBinaryTree.bottomViewBinaryTreeMain();
