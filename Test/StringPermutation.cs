@@ -55,7 +55,6 @@ namespace Test
             stringPermutation(0, arr.Length -1, arr);
             
             result.ForEach(x => Console.WriteLine(x + "\n"));
-            int xx = 1;
         }
     }
 }

@@ -6,7 +6,7 @@ using System;
 class MergeSortSolution
 {
     static int[] arr;
-    static void Main(string[] args)
+    static void MergeSortSolutionMain(string[] args)
     {
         
         arr = new int[7] { 38, 27, 43, 3, 9, 82, 10 };

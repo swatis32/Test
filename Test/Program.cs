@@ -11,6 +11,7 @@ namespace Test
       
         static void Main(string[] args)
         {
+            Kruskals.KruskalsMain(null);
             WordSearch.wordSearchMain();
             CountSmallerAfterNumber2.CountSmallerAfterNumber2Main();
             CountSmallerAfterNumber.countSmallerMain();

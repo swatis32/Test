@@ -44,11 +44,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConnectedCellInAGrid.cs" />
     <Compile Include="CountSmallerAfterNumber.cs" />
     <Compile Include="BFS.cs" />
     <Compile Include="CountSmallerAfterNumber2.cs" />
+    <Compile Include="FloydWarshall.cs" />
     <Compile Include="GoodStringCount.cs" />
     <Compile Include="IsListPalindrome.cs" />
+    <Compile Include="KruskalMST.cs" />
+    <Compile Include="MergeSort.cs" />
     <Compile Include="ProductExceptSelf.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

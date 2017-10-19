@@ -30,7 +30,7 @@ namespace Test
         static List<GridElement> visitedGridElements = new List<GridElement>();
         static int result = 0;
         static int tempResult = 0;
-        static void Main(String[] args)
+        static void ConnectedCellInAGridMain(String[] args)
         {
             int n = Convert.ToInt32(Console.ReadLine());
             int m = Convert.ToInt32(Console.ReadLine());

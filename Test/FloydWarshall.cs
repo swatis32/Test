@@ -9,7 +9,7 @@ public class FloydWarshall
     public const int Inf = 100000; 
     public static int[,] distMatrix; 
     public static int[,] pathMatrix;
-    public static void Main(string[] args)
+    public static void FloydWarshallMain(string[] args)
     {
         Console.WriteLine("Enter the number of vertices");
         string n = Console.ReadLine();
