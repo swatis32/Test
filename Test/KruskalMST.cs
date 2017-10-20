@@ -87,7 +87,7 @@ public class Kruskals
 
             // Condition for a cycle in a graph - why? think!!
             // watch 1:00 to 1:30 https://www.youtube.com/watch?v=n_t0a_8H8VY
-            // If there is a common edge between the 2 subsets, then that vertex must be uniting them to form a closed loop
+            // If there is a common vertex between the 2 subsets, then that vertex must be uniting them to form a closed loop
             if (parentSrc.V == parentDst.V) continue;
             Console.WriteLine("Src:" + src.V + " and Dst:" + dst.V + " are in MST");
             mst += e.Weight;
