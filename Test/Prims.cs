@@ -18,7 +18,7 @@ public class Prims
 	public static List<char> Vertices = new List<char>();
 	public static List<char> Visited = new List<char>();
 	public static Dictionary<char, List<char>> Nbors = new Dictionary<char, List<char>>();
-	public static void Main(string[] args)
+	public static void PrimsMain(string[] args)
 	{
 		Console.WriteLine("Enter # of vertices:");
 		int n = Int32.Parse(Console.ReadLine());
