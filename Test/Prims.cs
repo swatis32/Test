@@ -3,18 +3,18 @@ using System.Text;
 using System.Linq;
 using System.Collections.Generic;
 
-public class Edge
+public class edge
 {
-	public char Source;
-	public char Dest;
-	public int Weight;
+	public char Source { get; set; }
+	public char Dest { get; set; }
+	public int Weight { get; set; }
 }
 
 // http://www.geeksforgeeks.org/greedy-algorithms-set-5-prims-minimum-spanning-tree-mst-2/
 // https://www.youtube.com/watch?v=cplfcGZmX7I
 public class Prims
 {
-	public static Dictionary<Edge, int> Edgs = new Dictionary<Edge, int>();
+	public static Dictionary<edge, int> Edgs = new Dictionary<edge, int>();
 	public static List<char> Vertices = new List<char>();
 	public static List<char> Visited = new List<char>();
 	public static Dictionary<char, List<char>> Nbors = new Dictionary<char, List<char>>();
@@ -36,7 +36,7 @@ public class Prims
 		while (i < n)
 		{
 			Console.WriteLine("Edge " + i);
-			var e = new Edge();
+			var e = new edge();
 			Console.WriteLine("Source");
 			e.Source = Char.Parse(Console.ReadLine());
 			
@@ -65,12 +65,12 @@ public class Prims
 			}
 			weights.Sort();
 			int min = weights.First();
-			List<Edge> edges = new List<Edge>();
+			List<edge> edges = new List<edge>();
 			foreach (var item in nborList)
 			{
 				edges.Add(item.Key);
 			}
-			Edge e = edges.Where(x => x.Weight == min).First();
+			edge e = edges.Where(x => x.Weight == min).First();
 			if (!Visited.Contains(e.Source))
 			{
 				flag = true;

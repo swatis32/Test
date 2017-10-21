@@ -6,31 +6,31 @@ using System;
 
 public class Edge
 {
-    public Vertex Source {get;set;}
-    public Vertex Dest {get;set;}
-    public int Weight {get;set;}
-    public bool Visited {get;set;}
+    public Vertex source {get;set;}
+    public Vertex dest {get;set;}
+    public int weight {get;set;}
+    public bool visited {get;set;}
     
     public Edge()
     {
-        this.Source = new Vertex();
-        this.Dest = new Vertex();
+        this.source = new Vertex();
+        this.dest = new Vertex();
     }
 }
 
 public class Vertex
 {
-    public char V {get;set;}
-    public int Rank {get;set;}
-    public Vertex Parent {get;set;}
+    public char v {get;set;}
+    public int rank {get;set;}
+    public Vertex parent {get;set;}
     
     /// <summary>
     /// this function is the equivalent of make set
     /// </summary>
     public Vertex()
     {
-        this.Rank = 0;
-        this.Parent = this;
+        this.rank = 0;
+        this.parent = this;
     }
 }
 
@@ -56,8 +56,8 @@ public class Kruskals
         {
             Vertex v = new Vertex();
             Console.WriteLine("Vertex name:");
-            v.V =  Char.Parse(Console.ReadLine());
-            Map.Add(v.V, v);    
+            v.v =  Char.Parse(Console.ReadLine());
+            Map.Add(v.v, v);    
             i++;
         }
 
@@ -75,28 +75,28 @@ public class Kruskals
             // get smallest weight and remove it from list
             int wt = edgeList[0];
             edgeList.RemoveAt(0);
-            var e = Edg.Keys.Where(x => x.Visited == false && wt == x.Weight).FirstOrDefault();
+            var e = Edg.Keys.Where(x => x.visited == false && wt == x.weight).FirstOrDefault();
             if (e == null) { throw new Exception("Cannot find edge with weight " + wt); }
             // mark edge as visited
-            e.Visited = true;
+            e.visited = true;
             // find parents of edge nodes
-            var src = e.Source;
-            var dst = e.Dest;
+            var src = e.source;
+            var dst = e.dest;
             Vertex parentSrc = FindParent(src);
             Vertex parentDst = FindParent(dst);
 
             // Condition for a cycle in a graph - why? think!!
             // watch 1:00 to 1:30 https://www.youtube.com/watch?v=n_t0a_8H8VY
             // If there is a common vertex between the 2 subsets, then that vertex must be uniting them to form a closed loop
-            if (parentSrc.V == parentDst.V) continue;
-            Console.WriteLine("Src:" + src.V + " and Dst:" + dst.V + " are in MST");
-            mst += e.Weight;
+            if (parentSrc.v == parentDst.v) continue;
+            Console.WriteLine("Src:" + src.v + " and Dst:" + dst.v + " are in MST");
+            mst += e.weight;
             // do a union of the edge nodes
-            parentSrc.Parent = parentDst;
-            if (!vtx.Contains(e.Source.V))
-                vtx.Add(e.Source.V);
-            if (!vtx.Contains(e.Dest.V))
-                vtx.Add(e.Dest.V);
+            parentSrc.parent = parentDst;
+            if (!vtx.Contains(e.source.v))
+                vtx.Add(e.source.v);
+            if (!vtx.Contains(e.dest.v))
+                vtx.Add(e.dest.v);
         }
 
         Console.WriteLine("MST is: " + mst);
@@ -104,7 +104,7 @@ public class Kruskals
     
     public static Vertex FindParent(Vertex node)
     {
-        Vertex parent = node.Parent;
+        Vertex parent = node.parent;
         if (parent == node)
         {
             return node;
@@ -127,9 +127,9 @@ public class Kruskals
             Console.WriteLine("Weight");
             int w = Int32.Parse(Console.ReadLine());
             
-            e.Source = Map[s];
-            e.Dest = Map[d];
-            e.Weight = w;
+            e.source = Map[s];
+            e.dest = Map[d];
+            e.weight = w;
             Edg.Add(e, w);
         }
 
