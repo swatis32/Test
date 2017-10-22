@@ -1,4 +1,5 @@
 # https://www.youtube.com/watch?v=iaBEKo5sM7w
+# This is O(n2),better method is here: http://www.geeksforgeeks.org/depth-first-traversal-for-a-graph/
 class DFS(object):
     def __init__(self, nodes, edges, start):
         self.stack = list()

@@ -53,6 +53,7 @@
     <Compile Include="IsListPalindrome.cs" />
     <Compile Include="KruskalMST.cs" />
     <Compile Include="MergeSort.cs" />
+    <Compile Include="Prims.cs" />
     <Compile Include="ProductExceptSelf.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,6 +70,7 @@
     <Compile Include="SumOfTwo.cs" />
     <Compile Include="SwapLexOrder.cs" />
     <Compile Include="TextJustification.cs" />
+    <Compile Include="TopologicalSort.cs" />
     <Compile Include="TripletSum.cs" />
     <Compile Include="VisiblePoints.cs" />
     <Compile Include="WordLadder.cs" />

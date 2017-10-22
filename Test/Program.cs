@@ -11,6 +11,7 @@ namespace Test
       
         static void Main(string[] args)
         {
+            TopologicalSort.TopologicalSortMain();
             Prims.PrimsMain(null);
             Kruskals.KruskalsMain(null);
             WordSearch.wordSearchMain();
