@@ -68,6 +68,7 @@ public class Kruskals
         var edgeList = Edg.Values.Select(x => x).ToList();
         edgeList.Sort();
         int mst = 0;
+        // All MST vertices stored in vtx
         List<char> vtx = new List<char>();
         int count = edgeList.Count;
         for (int j = 0; j < count; j++)
