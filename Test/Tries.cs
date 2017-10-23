@@ -10,6 +10,10 @@ namespace Test
     using System;
     using System.Linq;
     using System.Text;
+    /// <summary>
+    /// https://www.youtube.com/watch?v=AXjmTQ8LEoI&t=570s
+    /// Delete operation is not complete
+    /// </summary>
     class Trie
     {
         public Dictionary<char, Trie> Children { get; set; }
@@ -25,8 +29,9 @@ namespace Test
     {
         static List<string> words = new List<string>();
         static List<string> search = new List<string>();
+        static List<string> delete = new List<string>();
         static Trie t = new Trie();
-        public static void Main(string[] args)
+        public static void TrieMain(string[] args)
         {
             Console.WriteLine("Enter words to store in Trie:");
             while (true)
@@ -53,19 +58,8 @@ namespace Test
                 }
                 search.Add(x);
             }
-            foreach (var item in search)
-            {
-                bool res = Search(item, ref t, true);
-                switch (res)
-                {
-                    case true:
-                        Console.WriteLine(item + " was found");
-                        break;
-                    case false:
-                        Console.WriteLine(item + " was NOT found");
-                        break;
-                }
-            }
+
+            SearchWords(search, true);
             search = new List<string>();
             Console.WriteLine("Enter full words to search in Trie:");
             while (true)
@@ -77,9 +71,39 @@ namespace Test
                 }
                 search.Add(x);
             }
-            foreach (var item in search)
+
+            SearchWords(search, false);
+            Console.WriteLine("Enter words to delete in Trie:");
+            while (true)
             {
-                bool res = Search(item, ref t, false);
+                string x = Console.ReadLine();
+                if (string.IsNullOrEmpty(x))
+                {
+                    break;
+                }
+                delete.Add(x);
+            }
+            foreach (var item in delete)
+            {
+                bool res = Delete(item, ref t);
+                switch (res)
+                {
+                    case true:
+                        Console.WriteLine(item + " was deleted");
+                        break;
+                    case false:
+                        Console.WriteLine(item + " was NOT deleted");
+                        break;
+                }
+            }
+            SearchWords(delete, false);
+        }
+
+        public static void SearchWords(List<string> words, bool prefix)
+        {
+            foreach (var item in words)
+            {
+                bool res = Search(item, ref t, prefix);
                 switch (res)
                 {
                     case true:
@@ -121,6 +145,24 @@ namespace Test
             }
             var trie = tr.Children[first];
             return Search(w, ref trie, prefix);
+
+        }
+
+        public static bool Delete(string word, ref Trie tr)
+        {
+            bool res = Search(word, ref tr, false);
+            if (res == false)
+            {
+                Console.WriteLine("Cannot delete " + word + " - it doesnt exist!");
+                return false;
+            }
+
+            DeleteWord(word, ref tr);
+            return true;
+        }
+
+        private static void DeleteWord(string word, ref Trie tr)
+        {
 
         }
 

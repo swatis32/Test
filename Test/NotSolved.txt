@@ -1,6 +1,7 @@
 http://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 https://www.hackerrank.com/challenges/ctci-contacts/problem
-https://www.youtube.com/watch?v=AXjmTQ8LEoI [Tries - simple explanation]
+https://www.youtube.com/watch?v=AXjmTQ8LEoI [Tries - do deletion in c#]
+http://www.geeksforgeeks.org/bridge-in-a-graph/ 
 http://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
 http://www.geeksforgeeks.org/?p=12635
 https://discuss.leetcode.com/topic/31162/mergesort-solution/11
