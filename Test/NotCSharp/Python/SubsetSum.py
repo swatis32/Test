@@ -1,4 +1,5 @@
 # https://codefights.com/interview/3gY7eyeRMZeARKmyQ
+# look at the other file - subset sum problem
 def subsetSum(arr):
     sum_of_arr = sum(arr)
     # if sum is odd, then you cant divide into 2 equal arrays [assuming arrays are int]

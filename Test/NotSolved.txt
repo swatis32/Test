@@ -19,3 +19,8 @@ https://stackoverflow.com/questions/12567329/multidimensional-array-vs
 
 System design
 https://www.youtube.com/watch?v=DSGsa0pu8-k [Parking lot]
+https://www.youtube.com/watch?v=fMZMm_0ZhK4 
+https://msdn.microsoft.com/en-us/library/aa480356.aspx 
+
+If you have time
+https://sqlzoo.net/ 

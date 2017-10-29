@@ -46,7 +46,11 @@ def subset_sum_problem(n, nums):
     return ss_list[len(nums) - 1][temp - 1]
 
 
-subset_sum_problem(4, [1, 3, 3, 5])
+print(subset_sum_problem(4, [1, 3, 3, 5]))
+x = [87, 56, 43, 91, 27, 65, 59, 36, 32, 51, 37, 28, 75, 7, 74]
+print(subset_sum_problem(len(x), x))
+x = [858, 395, 29, 237, 235, 793, 818, 428, 143, 11, 928, 529, 776, 404, 443, 763, 613, 538, 606, 840, 904, 818]
+print(subset_sum_problem(len(x), x))
 '''
 t = int(input().strip())
 for i in range(t):

@@ -71,6 +71,7 @@
     <Compile Include="SwapLexOrder.cs" />
     <Compile Include="TextJustification.cs" />
     <Compile Include="TopologicalSort.cs" />
+    <Compile Include="Tries.cs" />
     <Compile Include="TripletSum.cs" />
     <Compile Include="VisiblePoints.cs" />
     <Compile Include="WordLadder.cs" />
