@@ -163,7 +163,7 @@ namespace Test
 
         private static void DeleteWord(string word, ref Trie tr)
         {
-
+            throw new NotImplementedException();
         }
 
         public static void Insert(string word, ref Trie tr)
