@@ -16,8 +16,12 @@ Look up set operations in file SmallestNumberSubset.py
 http://www.geeksforgeeks.org/np-completeness-set-1/
 https://jeffknupp.com/blog/2012/11/13/is-python-callbyvalue-or-callbyreference-neither/ 
 https://stackoverflow.com/questions/12567329/multidimensional-array-vs 
-https://wiki.python.org/moin/MovingToPythonFromOtherLanguages [Python slicing]
-http://pythoncentral.io/how-to-slice-listsarrays-and-tuples-in-python/ [Python slicing]
+https://www.youtube.com/watch?v=ajrtAuDg3yw [Python slicing]
+
+
+Newton's method
+https://www.youtube.com/watch?v=cOmAk82cr9M
+
 System design
 https://www.youtube.com/watch?v=DSGsa0pu8-k [Parking lot]
 https://www.youtube.com/watch?v=fMZMm_0ZhK4 

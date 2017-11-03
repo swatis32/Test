@@ -42,7 +42,7 @@ class Solution(object):
         while r * r > x:
             prev_r = r
             # The idea behind this is simple
-            # https://www.youtube.com/watch?v=2158QbsunA8
+            # https://www.youtube.com/watch?v=cOmAk82cr9M
             r = (r + x / r) / 2
             # this is done to avoid it from going into infinite loop, try removing this and doing sqrt(5)
             if prev_r == r:
