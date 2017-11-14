@@ -11,6 +11,7 @@ namespace Test
       
         static void Main(string[] args)
         {
+            BSTIteratorDriver.BSTIteratorMain();
             TopologicalSort.TopologicalSortMain();
             Prims.PrimsMain(null);
             Kruskals.KruskalsMain(null);

@@ -4,13 +4,13 @@ public class Main {
 
     public static void main(String[] args) throws  Exception
     {
+        BottomViewBinaryTree.bottomViewBinaryTreeMain();
         // Sample sample = new Sample();
         // sample.sampleFunc();
 	    // write your code here
         HeapSort.main(null);
         LIS.lisMain(null);
         LeftViewBinaryTree.leftViewBinaryTreeMain();
-        BottomViewBinaryTree.bottomViewBinaryTreeMain();
         RunningMedian.runningMedianMain();
         MinHeap.minHeapMain();
         MaxHeap.maxHeapMain();

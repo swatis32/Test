@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BSTIterator.cs" />
     <Compile Include="ConnectedCellInAGrid.cs" />
     <Compile Include="CountSmallerAfterNumber.cs" />
     <Compile Include="BFS.cs" />
