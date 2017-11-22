@@ -20,9 +20,9 @@ namespace Test
         }
     }
 
-    class BSTIterator
+    class BSTIteratorDriver
     {
-        static void Main(String[] args)
+        public static void BSTIteratorMain(String[] args)
         {
             /*
                    15
@@ -54,9 +54,17 @@ namespace Test
             InOrder(t);
             Console.WriteLine("Performing Inorder Non-Recursive");
             NonRecInOrder(t);
+            Nodes.Clear();
+            Console.WriteLine("Performing Preorder Non-Recursive");
+            NonRecPreOrder(t);
         }
 
         public static List<Tree> Nodes = new List<Tree>();
+
+        /// <summary>
+        /// LNR
+        /// </summary>
+        /// <param name="t"></param>
         public static void NonRecInOrder(Tree t)
         {
             Nodes.Add(t);
@@ -76,6 +84,29 @@ namespace Test
             }
 
 
+        }
+
+        /// <summary>
+        /// NLR
+        /// </summary>
+        /// <param name="t"></param>
+        public static void NonRecPreOrder(Tree t)
+        {
+
+            while (t != null || Nodes.Count > 0)
+            {
+                while (t != null)
+                {
+                    Nodes.Add(t);
+                    Console.WriteLine(t.val);
+                    t = t.Left;
+                }
+                int idx = Nodes.Count - 1;
+                t = Nodes.ElementAt(idx);
+                t = t.Right;
+                Nodes.RemoveAt(idx);
+
+            }
         }
 
         public static void InOrder(Tree root)

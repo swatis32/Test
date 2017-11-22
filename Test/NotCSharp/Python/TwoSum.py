@@ -21,3 +21,8 @@ class Solution(object):
                 return list(ans)
 
         return []
+
+
+s = Solution()
+s.twoSum([1, 2, 3, 4, 5, 6], 10)
+s.twoSum([1, 1, 3, 4, 6, 6], 12)

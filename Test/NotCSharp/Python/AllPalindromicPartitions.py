@@ -1,5 +1,5 @@
 # http://www.geeksforgeeks.org/given-a-string-print-all-possible-palindromic-partition/
-
+# Not the same problem but similar: https://www.youtube.com/watch?v=lDYIvtBVmgo&t=601s
 
 def allPalindromicPartitions(a):
     lena = len(a)

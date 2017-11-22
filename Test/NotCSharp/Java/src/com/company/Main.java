@@ -4,6 +4,7 @@ public class Main {
 
     public static void main(String[] args) throws  Exception
     {
+        HasPathWithGivenSum.hasPathWithGivenSumMain();
         BottomViewBinaryTree.bottomViewBinaryTreeMain();
         // Sample sample = new Sample();
         // sample.sampleFunc();

@@ -1,4 +1,5 @@
 # http://www.geeksforgeeks.org/fractional-knapsack-problem/
+# Check out important message below!!!
 '''
 import operator
 stats = {'a':1000, 'b':3000, 'c': 100}
@@ -33,6 +34,7 @@ def frac_knapsack(n, w, vals, wts):
             result += val_wt[k] * w
             w = 0
 
+    # IMPORTANT -- HOW TO ROUND A RESULT!!!!
     return round(result, 2)
 
 

@@ -37,6 +37,7 @@ def countTriplets2(a, summ):
     return count
 
 print(countTriplets2([1, 2, 3, 4, 5], 10))
+print(countTriplets2([10, 11, 12, 13, 1, 2, 3, 4, 14, 15, 16, 17], 20))
 print(alist)
 
 
