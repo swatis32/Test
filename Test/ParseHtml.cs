@@ -24,7 +24,7 @@ namespace Test
             int len = content.Length;
             // checks for whether we have reached threshold t
             int k = 0;
-            string res = string.Empty;
+            StringBuilder res = new StringBuilder();
             for (int  i = 0; i < len;)
             {
                 // parse for tag
@@ -36,28 +36,31 @@ namespace Test
                     {
                         tag = tag + content[i++];
                     }
-                    res = res + "<" + tag + ">";
+                   
+                    res.Append("<" + tag + ">");
                 }
 
                 // parse for content
                 else
                 {
+                    // ignore any new line or space characters
                     if (content[i] == '\r' || content[i] == '\n')
                     {
                         i++;
                         continue;
                     }
 
+                    // as long as we're less than the threshold, keep recording the result
                     if (k < t)
                     {
-                        res = res + content[i];
+                        res.Append(content[i]);
                         k++;
                     }
                 }
 
                 i++;
             }
-            return res;
+            return res.ToString();
         }
     }
 }
