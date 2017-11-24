@@ -17,7 +17,16 @@ def palindrome_partition(arr):
             if list(x) == list(reversed(list(x))):
                 pp[i][j] = 0
             else:
-                pp[i][j] = 1 + min(pp[i+1][j], pp[i][j-1])
+                k = i
+                mini = 1000
+                # THIS IS SUPER IMPORTANT
+                # WE ARE SPLITTING AT EACH POINT BETWEEN ARR[i:j] and getting the min
+                while k < j:
+                    temp = 1 + pp[i][k] + pp[k+1][j]
+                    if temp < mini:
+                        mini = temp
+                    k += 1
+                pp[i][j] = mini
             i += 1
             j += 1
         length += 1
@@ -30,3 +39,4 @@ print(palindrome_partition('aaaaa'))
 print(palindrome_partition('nitin'))
 print(palindrome_partition('shasha'))
 print(palindrome_partition('madame'))
+print(palindrome_partition('aabcac'))
