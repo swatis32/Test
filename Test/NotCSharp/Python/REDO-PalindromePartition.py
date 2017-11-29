@@ -1,7 +1,8 @@
 # https://www.youtube.com/watch?v=lDYIvtBVmgo
 from copy import deepcopy
 
-
+# This solution is not optimal, optimal is O(n2)
+# https://www.youtube.com/watch?v=WPr1jDh3bUQ
 def palindrome_partition(arr):
     lenarr = len(arr)
     pp = [[1000] * lenarr for x in range(lenarr)]
@@ -31,6 +32,15 @@ def palindrome_partition(arr):
             j += 1
         length += 1
 
+    palindromes = set()
+    for i in range(lenarr):
+        for j in range(lenarr):
+            if pp[i][j] == 0:
+                palindromes.add(arr[i:j+1])
+
+    print("The palindromes for arr:{0} are".format(arr))
+    print(palindromes)
+    print("The minimum number of partitions required are")
     return pp[0][lenarr - 1]
 
 

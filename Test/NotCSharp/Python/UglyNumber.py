@@ -5,7 +5,7 @@ def uglyNumber(n):
     uglyNums = list()
     uglyNums.append(1)
     divs = [2, 3, 5]
-    i = 2;
+    i = 2
     while len(uglyNums) < n:
         j = i
         for x in divs:
