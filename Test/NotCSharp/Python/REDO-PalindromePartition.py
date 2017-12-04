@@ -50,3 +50,58 @@ print(palindrome_partition('nitin'))
 print(palindrome_partition('shasha'))
 print(palindrome_partition('madame'))
 print(palindrome_partition('aabcac'))
+
+# O(n2) solution is defined below
+def pal_partition(arr):
+
+    pal = [[False] * len(arr) for x in range(len(arr))]
+    for i in range(len(arr)):
+        pal[i][i] = True
+
+    # cuts is the number of partitions needed until point i
+    '''
+    b a n a n a
+    0 1 2 3 4 5
+    
+    cuts[1] = number of cuts needed for string arr[0:2] = "ba" = 1
+    cuts[1] = 1
+    cuts[len(arr)-1] = answer needed
+    '''
+    cuts = [1000] * len(arr)
+    l = 2
+
+    while l <= len(arr):
+        i = 0
+        j = l
+        while j < len(arr):
+            if arr[i] == arr[j]:
+                if i == j-1:
+                    pal[i][j] = True
+                else:
+                    pal[i][j] = pal[i+1][j-1]
+            i += 1
+            j += 1
+        l += 1
+
+    cuts[0] = 0
+    for i in range(1, len(arr)):
+        if pal[0][i] is True:
+            cuts[i] = 0
+        else:
+            minicut = i
+            # start splitting the string at each point in the string
+            for j in range(i):
+                # didnt understand this completely
+                if pal[j+1][i] is True and minicut > 1 + cuts[j]:
+                    minicut = 1 + cuts[j]
+            cuts[i] = minicut
+    print("Palindrome partition 2 result")
+    return cuts[len(arr) - 1]
+
+print(pal_partition('banana'))
+print(pal_partition('abcbm'))
+print(pal_partition('aaaaa'))
+print(pal_partition('nitin'))
+print(pal_partition('shasha'))
+print(pal_partition('madame'))
+print(pal_partition('aabcac'))

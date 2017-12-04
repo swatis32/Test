@@ -18,7 +18,7 @@ class Solution(object):
         while x > 0:
             r = x % 10
             lx.append(r)
-            x = x / 10
+            x = int(x / 10)
 
         while True:
             if 0 == lx[0]:
@@ -34,7 +34,10 @@ class Solution(object):
         return rev
 
 s = Solution()
-s.reverse2(-123)
+print(s.reverse2(-123))
+print(s.reverse2(-5200))
+print(s.reverse(-123))
+print(s.reverse(-5200))
 '''
 public int reverse(int x) {
         long rev= 0;

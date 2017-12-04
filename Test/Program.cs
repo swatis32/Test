@@ -11,6 +11,7 @@ namespace Test
       
         static void Main(string[] args)
         {
+            GameOfLife.GameOfLifeMain();
             ParseHtml.ParseHtmlMain(null);
             AllTextSuggestions.AllTextSuggestionsMain(null);
             BSTIteratorDriver.BSTIteratorMain(null);

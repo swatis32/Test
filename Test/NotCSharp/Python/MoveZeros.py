@@ -24,9 +24,12 @@ class Solution(object):
                 nums[j] = 0
                 nums[i] = temp
                 i += 1
-                # if curr and next are both 0, just move ahead
+            # if curr and next are both 0, just move ahead
             elif nums[i] == 0 and nums[j] == 0:
                 pass
+            # IMPORTANT - ALMOST MISSED THIS ONE!
+            elif nums[i] != 0:
+                i += 1
             j += 1
         print(nums)
 
@@ -35,4 +38,5 @@ s.moveZeroes([0, 1, 0, 3, 12])
 s.moveZeroes([0, 0, 0, 0, 0])
 s.moveZeroes([0, 1, 1, 1, 1])
 s.moveZeroes([1, 1, 1, 1, 1])
+s.moveZeroes([1, 0, 1])
 s.moveZeroes([1])

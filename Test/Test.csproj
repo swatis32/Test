@@ -52,9 +52,11 @@
     <Compile Include="BFS.cs" />
     <Compile Include="CountSmallerAfterNumber2.cs" />
     <Compile Include="FloydWarshall.cs" />
+    <Compile Include="GameOfLife.cs" />
     <Compile Include="GoodStringCount.cs" />
     <Compile Include="IsListPalindrome.cs" />
     <Compile Include="KruskalMST.cs" />
+    <Compile Include="LongestCommonPrefixTrie.cs" />
     <Compile Include="MergeSort.cs" />
     <Compile Include="ParseHtml.cs" />
     <Compile Include="Prims.cs" />
