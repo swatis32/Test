@@ -20,6 +20,7 @@ https://www.youtube.com/watch?v=ajrtAuDg3yw [Python slicing]
 https://stackoverflow.com/questions/30362391/how-to-find-first-key-in-a-dictionary 
 More questions to look into
 See questions solved in MS Protect book [solved by hand]
+Solve Linked List cycle
 
 Newton's method
 https://www.youtube.com/watch?v=cOmAk82cr9M

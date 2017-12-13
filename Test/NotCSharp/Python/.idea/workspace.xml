@@ -15,104 +15,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="REDO-PalindromePartition.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/REDO-PalindromePartition.py">
+      <file leaf-file-name="Primality.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Primality.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="91" column="68" lean-forward="false" selection-start-line="91" selection-start-column="68" selection-end-line="91" selection-end-column="68" />
+            <state relative-caret-position="82">
+              <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LongestPalindromicSubsequence.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LongestPalindromicSubsequence.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REDO-LongestPalindromicSubstring.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/REDO-LongestPalindromicSubstring.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="861">
-              <caret line="63" column="18" lean-forward="true" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REDO-RemoveDuplicates.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/REDO-RemoveDuplicates.py">
+      <file leaf-file-name="ReverseSingleLinkedList.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ReverseSingleLinkedList.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="943">
-              <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MoveZeros.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MoveZeros.py">
+      <file leaf-file-name="ProductExceptSelf.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProductExceptSelf.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="472">
-              <caret line="29" column="49" lean-forward="false" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReverseInteger.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ReverseInteger.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CopyLinkedListWithRandomPtr.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CopyLinkedListWithRandomPtr.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-492">
-              <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IncreasingTripletSequence.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IncreasingTripletSequence.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="779">
-              <caret line="19" column="62" lean-forward="false" selection-start-line="19" selection-start-column="62" selection-end-line="19" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="REDO-LRUCache.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/REDO-LRUCache.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="52" selection-end-column="25" />
-              <folding>
-                <element signature="e#55#90#0" expanded="true" />
-                <element signature="e#125#1373#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RemoveDuplicatesFromSortedArray2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RemoveDuplicatesFromSortedArray2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="20" column="26" lean-forward="true" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+            <state relative-caret-position="1066">
+              <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -136,15 +63,15 @@
       <find>mer</find>
       <find>me</find>
       <find>m</find>
+      <find>'</find>
     </findStrings>
+    <replaceStrings>
+      <replace>&quot;</replace>
+    </replaceStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/BubbleSort.py" />
-        <option value="$PROJECT_DIR$/InsertionSort.py" />
-        <option value="$PROJECT_DIR$/SmallestNumberSubset.py" />
-        <option value="$PROJECT_DIR$/QuickSort.py" />
         <option value="$PROJECT_DIR$/InterpolationSearch.py" />
         <option value="$PROJECT_DIR$/KLargestNumbers.py" />
         <option value="$PROJECT_DIR$/ClosestSum.py" />
@@ -177,7 +104,6 @@
         <option value="$PROJECT_DIR$/LongestPalindromicSubsequence.py" />
         <option value="$PROJECT_DIR$/CycleInDirectedGraph2.py" />
         <option value="$PROJECT_DIR$/PalindromeCheck.py" />
-        <option value="$PROJECT_DIR$/ReverseSingleLinkedList.py" />
         <option value="$PROJECT_DIR$/PalindromePartition.py" />
         <option value="$PROJECT_DIR$/LengthLongestSubstring.py" />
         <option value="$PROJECT_DIR$/UglyNumber.py" />
@@ -192,6 +118,11 @@
         <option value="$PROJECT_DIR$/CopyLinkedListWithRandomPtr.py" />
         <option value="$PROJECT_DIR$/MoveZeros.py" />
         <option value="$PROJECT_DIR$/ReverseInteger.py" />
+        <option value="$PROJECT_DIR$/LetterCombinationsPhoneNumber.py" />
+        <option value="$PROJECT_DIR$/SingleNumber.py" />
+        <option value="$PROJECT_DIR$/Primality.py" />
+        <option value="$PROJECT_DIR$/ReverseSingleLinkedList.py" />
+        <option value="$PROJECT_DIR$/ProductExceptSelf.py" />
       </list>
     </option>
   </component>
@@ -236,7 +167,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ReverseInteger.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ReverseSingleLinkedList.py" />
     <property name="SearchEverywhereHistoryKey" value="settings&#9;ACTION&#9;ShowSettings&#10;setting&#9;ACTION&#9;ShowSettings&#10;font&#9;ACTION&#9;EditorResetFontSize" />
   </component>
   <component name="RunDashboard">
@@ -329,7 +260,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="Python" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ReverseInteger.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ReverseSingleLinkedList.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -371,7 +302,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25500372" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33894736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33684212" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -604,11 +535,6 @@
           <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/ReverseSingleLinkedList.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/REDO-PalindromePartition.py</url>
           <line>13</line>
           <option name="timeStamp" value="116" />
@@ -628,6 +554,16 @@
           <line>46</line>
           <option name="timeStamp" value="121" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/LetterCombinationsPhoneNumber.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Primality.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -636,7 +572,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="123" />
+      <option name="time" value="133" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -655,47 +591,10 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EditDistance.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PythagoreanTriplets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-337">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LongestCommonSubsequence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AddTwoNumsLinkedList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SpecialArrayReversal.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AllPalindromicPartitions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="4" column="17" lean-forward="false" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -734,13 +633,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Primality.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -864,14 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ReverseSingleLinkedList.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="38" column="19" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,17 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/REDO-LRUCache.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="52" selection-end-column="25" />
-          <folding>
-            <element signature="e#55#90#0" expanded="true" />
-            <element signature="e#125#1373#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/REDO-PalindromePartition.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="502">
@@ -1030,14 +903,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CopyLinkedListWithRandomPtr.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-492">
-          <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MoveZeros.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="472">
@@ -1048,8 +913,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ReverseInteger.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
+        <state relative-caret-position="1476">
           <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AddTwoNumsLinkedList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-59">
+          <caret line="60" column="10" lean-forward="true" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AllPalindromicPartitions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="1" column="86" lean-forward="true" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingleNumber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="41">
+          <caret line="1" column="44" lean-forward="false" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LetterCombinationsPhoneNumber.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="20" column="26" lean-forward="false" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CopyLinkedListWithRandomPtr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-492">
+          <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/REDO-LRUCache.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="52" selection-end-column="25" />
+          <folding>
+            <element signature="e#55#90#0" expanded="true" />
+            <element signature="e#125#1373#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProductExceptSelf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1066">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ReverseSingleLinkedList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Primality.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
