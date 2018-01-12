@@ -1,4 +1,5 @@
 # https://www.youtube.com/watch?v=kekmCQXYwQ0
+# Kadanes algo
 def max_sum_subarray(arr):
     sum_ending_here = 0
     max_so_far = arr[0]
