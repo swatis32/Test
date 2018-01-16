@@ -1,6 +1,6 @@
 # easy solution
 # https://www.youtube.com/watch?v=bGC2fNALbNU&t=586s
-
+# https://leetcode.com/problems/subsets/discuss/27288
 
 def subset(given_arr):
     ss = [None] * len(given_arr)

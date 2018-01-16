@@ -6,10 +6,12 @@ import math
 # Similar to count triplets problem but different as we sort and then start from the end
 # k is starting at i-1, j starts at 0
 
+# special attention to the fact that we have i going from right to left and stopping at index 1
+# note if k is negative, then we will break out of while loop anyway
 
 def pythagorean_triplet(arr):
     arr = sorted(arr)
-    for i in range(len(arr) - 1, 3, -1):
+    for i in range(len(arr) - 1, 1, -1):
         k = i - 1
         j = 0
 

@@ -14,10 +14,10 @@ class Solution:
         [ 4, 5, 6,   0, 0],
         [ 7, 8, 9,   0, 0]
         top, bottom, left, right
-        x = left -> right [top][x] top++ 
-        x = top -> bottom [x][right] right--
-        x = right -> left [bottom][x] bottom--
-        x = bottom -> top [x][left] left++
+        x = left -> right [top][x] -- AT THE END, top++ 
+        x = top -> bottom [x][right] -- AT THE END, right--
+        x = right -> left [bottom][x] -- AT THE END, bottom--
+        x = bottom -> top [x][left] -- AT THE END, left++
         '''
         if matrix == []:
             return []

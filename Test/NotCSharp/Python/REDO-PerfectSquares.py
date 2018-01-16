@@ -4,7 +4,14 @@ import math
 
 class Solution(object):
     # https://discuss.leetcode.com/topic/26400/an-easy-understanding-dp-solution-in-java/20
-
+    # res stores the value = number of elements it takes to do perfect square combo for key
+    # for example, if key = 12, then res[12] = 3 - ie [4 + 4 + 4], we are not storing that 12 is coming from 4,4,4
+    # we're just storing least number of elements to store 12 as a perfect square in res[12]
+    # hence, res[12] = min(res[12 - 1] + 1, res[12 - 4] + 1, min[12 - 9] + 1)
+    # why? --> we're saying you can get min elements summing to 12 in 3 ways,
+    # summing to 11 + (1 * 1) --> summing to 11 + 1 element
+    # summing to 8 + (2 * 2) --> summing to 8 + 1 element
+    # summing to 3 + (3 * 3) --> summing to 3 + 1 element
     def numSquares(self, n):
         res = dict()
         res[0] = 0

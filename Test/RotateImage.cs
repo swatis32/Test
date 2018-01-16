@@ -8,6 +8,7 @@ namespace Test
 {
     /// <summary>
     /// https://codefights.com/interview/BgjZ2duKaYrrjsGcK
+	/// Not efficient, see python solution instead
     /// </summary>
     class RotateImage
     {
