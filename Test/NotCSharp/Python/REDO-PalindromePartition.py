@@ -105,3 +105,34 @@ print(pal_partition('nitin'))
 print(pal_partition('shasha'))
 print(pal_partition('madame'))
 print(pal_partition('aabcac'))
+
+# Solution number 3, uses dfs
+# https://leetcode.com/problems/palindrome-partitioning/discuss/
+class Solution:
+    def __init__(self):
+        self.res = [] # final array, which will be a list of lists
+        self.l = [] # l is like a temp array that contains all
+
+    def partition(self, s):
+        """
+        :type s: str
+        :rtype: List[List[str]]
+        """
+        self.dfs(0, s)
+        print(self.res)
+        return self.res
+
+    def dfs(self, pos, s):
+        if pos == len(s):
+            self.res.append(self.l)
+        else:
+            i = pos
+            while i < len(s):
+                if self.ispalindrome(s, pos, i):
+                    self.l.append(s[pos:i + 1])
+                    self.dfs(i + 1, s)
+                    self.l = self.l[0:len(self.l) - 1]
+                i += 1
+
+    def ispalindrome(self, s, i, j):
+        return s[i:j + 1] == ''.join(list(reversed(s[i:j + 1])))

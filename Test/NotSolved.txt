@@ -2,7 +2,6 @@ http://www.geeksforgeeks.org/top-10-algorithms-in-interview-questions/
 https://www.hackerrank.com/challenges/ctci-contacts/problem
 https://www.youtube.com/watch?v=AXjmTQ8LEoI [Tries - do deletion in c#]
 http://www.geeksforgeeks.org/bridge-in-a-graph/
-http://www.geeksforgeeks.org/write-a-c-program-to-print-all-permutations-of-a-given-string/
 http://www.geeksforgeeks.org/?p=12635
 https://discuss.leetcode.com/topic/31162/mergesort-solution/11
 https://leetcode.com/problems/word-search/description/
@@ -17,10 +16,12 @@ http://www.geeksforgeeks.org/np-completeness-set-1/
 https://jeffknupp.com/blog/2012/11/13/is-python-callbyvalue-or-callbyreference-neither/
 https://stackoverflow.com/questions/12567329/multidimensional-array-vs
 https://www.youtube.com/watch?v=ajrtAuDg3yw [Python slicing]
-https://stackoverflow.com/questions/30362391/how-to-find-first-key-in-a-dictionary 
+https://stackoverflow.com/questions/403421/how-to-sort-a-list-of-objects-based-on-an-attribute-of-the-objects
+https://stackoverflow.com/questions/30362391/how-to-find-first-key-in-a-dictionary
 More questions to look into
 See questions solved in MS Protect book [solved by hand]
-Solve Linked List cycle
+https://leetcode.com/problems/merge-intervals/discuss/
+
 
 Newton's method
 https://www.youtube.com/watch?v=cOmAk82cr9M

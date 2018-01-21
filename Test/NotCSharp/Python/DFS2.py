@@ -71,7 +71,7 @@ dfss.add_edge(1, 2)
 dfss.add_edge(2, 4)
 dfss.add_edge(1, 1)
 
-dfss.dfs_search(0, 2)
+dfss.dfs_search(1, 4)
 print(dfss.result)
 
 dfss = DFS(2)

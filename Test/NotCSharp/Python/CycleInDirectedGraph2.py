@@ -4,6 +4,8 @@
 # Function should return True/False or 1/0
 # Graph(graph) is a defaultict of type List
 # n is no of Vertices
+# https://leetcode.com/problems/course-schedule/description/
+
 from collections import defaultdict
 
 visited = []
