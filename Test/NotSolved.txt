@@ -21,7 +21,7 @@ https://stackoverflow.com/questions/30362391/how-to-find-first-key-in-a-dictiona
 More questions to look into
 See questions solved in MS Protect book [solved by hand]
 https://leetcode.com/problems/merge-intervals/discuss/
-
+https://stackoverflow.com/questions/13704860/zip-lists-in-python
 
 Newton's method
 https://www.youtube.com/watch?v=cOmAk82cr9M
