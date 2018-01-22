@@ -35,7 +35,9 @@ def subset_sum_problem(n, nums):
                 ss_list[i][j] = ss_list[i - 1][j]
 
             if nums[i] <= j:
+                # you dont include nums[i], take the value from above column
                 ans1 = ss_list[i - 1][j]
+                # you do include nums[i], so you subtract nums[i] from j and look above
                 ans2 = ss_list[i - 1][j - nums[i]]
                 if ans1 == "YES" or ans2 == "YES":
                     ans = "YES"

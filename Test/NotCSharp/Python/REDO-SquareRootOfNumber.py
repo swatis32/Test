@@ -38,7 +38,6 @@ class Solution(object):
         :rtype: int
         """
         r = x
-        prev_r = r
         while r * r > x:
             prev_r = r
             # The idea behind this is simple

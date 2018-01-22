@@ -37,7 +37,7 @@ for i in range(t):
 
 def subarr_with_given_sum(summ, arr):
     if summ in arr:
-        summ
+        return summ
 
     if sum(arr) == summ:
         return arr

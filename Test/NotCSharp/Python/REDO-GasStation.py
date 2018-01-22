@@ -35,6 +35,10 @@ class Solution(object):
         start = 0
         gasleft = 0
         # we will have gasleft > 0 at this point, now we just need to find start
+        '''
+        Next, accumulate the "surplus" or "deficit" along the circle, at one point, you will have the biggest deficit. 
+        Starting from the next station, you will never run into deficit so you can travel around the circle.
+        '''
         for i in range(0, lengas):
             gasleft += gas[i] - cost[i]
             if gasleft < 0:

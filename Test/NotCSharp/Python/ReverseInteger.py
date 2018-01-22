@@ -2,7 +2,8 @@ class Solution(object):
     def reverse2(self, x):
         s = int(x > 0)
         if s == 0:
-            s = -1
+            s = -1 # take the sign of the number
+        # multiply sign * integer version of the absolute number reversed without the sign
         n = s * int(str(abs(x))[::-1])
         return n if n.bit_length() < 32 else 0
 

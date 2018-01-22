@@ -7,16 +7,19 @@ def multiplyTwoStrings(s1, s2):
 
 multiplyTwoStrings("23", "34")
 
-
+# https://www.youtube.com/watch?v=l65AaJTg6oQ&t=214s
 def multiply(s1, s2):
     m = len(s1)
     n = len(s2)
-    res = 0;
+    res = 0
     for i in range(m):
         a = int(s1[m - i - 1])
         for j in range(n):
             b = int(s2[n - j - 1])
-            res += a * b * (10 ** (i + j))
+            print("a and b are", a, b)
+            temp = a * b * (10 ** (i + j))
+            print("temp is", temp)
+            res += temp
     return res
 
 print(multiply("23", "34"))
