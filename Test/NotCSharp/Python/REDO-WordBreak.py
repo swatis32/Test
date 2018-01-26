@@ -28,7 +28,6 @@ class Solution2(object):
         while i <= len(s):
             if s[:i] in wordDict:
                 res = self.wordBreak(s[i:], wordDict)
-                self.dic[s[i:]] = res
                 if res:
                     return res
             i += 1

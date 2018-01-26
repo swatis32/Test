@@ -44,5 +44,6 @@ class Solution(object):
             if gasleft < 0:
                 gasleft = 0
                 # why do we claim that start = i+1 will be the best position to start if gasleft < 0
+                # there is a mathematical proof around this
                 start = i + 1
         return start
