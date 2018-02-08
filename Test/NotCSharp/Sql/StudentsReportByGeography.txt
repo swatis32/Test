@@ -1,0 +1,47 @@
+A U.S graduate school has students from Asia, Europe and America. The students' location information are stored in table student as below.
+| name   | continent |
+|--------|-----------|
+| Jack   | America   |
+| Pascal | Europe    |
+| Xi     | Asia      |
+| Jane   | America   |
+Pivot the continent column in this table so that each name is sorted alphabetically and displayed underneath its corresponding continent. The output headers should be America, Asia and Europe respectively. It is guaranteed that the student number from America is no less than either Asia or Europe.
+For the sample input, the output is:
+| America | Asia | Europe |
+|---------|------|--------|
+| Jack    | Xi   | Pascal |
+| Jane    |      |        |
+Follow-up: If it is unknown which continent has the most students, can you write a query to generate the student report?
+
+Answer
+The key idea is to use a,b,c as IDs and store the data by doing LEFT JOINS on IDs (we dont want to disregard extra rows in the America column).
+For example, the table we get when we do select name, @a := @a + 1 as id from student where continent = 'America' order by name is
+
+| row_id | America |
+|--------|---------|
+| 1      | Jack    |
+| 2      | Jane    |
+
+the corresponding table for Asia and Europe look like
+| row_id | Asia |
+|--------|------|
+| 1      | Xi   |
+
+| row_id | Europe |
+|--------|--------|
+| 1      | Jesper |
+
+when we "LEFT!!!!" join on id, starting at America (because it has 2 rows), we get the answer above. The key is THE ORDERING OF THE LEFT JOINS
+more here: https://leetcode.com/articles/students-report-by-geography/
+
+
+set @a = 0;
+set @b = 0;
+set @c = 0;
+
+Select America.name as America, Asia.name as Asia, Europe.name as Europe from
+(select name, @a := @a + 1 as id from student where continent = 'America' order by name) as America
+Left Join
+(select name, @b := @b + 1 as id from student where continent = 'Asia' order by name) as Asia on America.id = Asia.id
+Left Join
+(select name, @c := @c + 1 as id from student where continent = 'Europe' order by name) as Europe on America.id = Europe.id

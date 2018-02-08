@@ -7,6 +7,10 @@ class Solution(object):
             print("dp[i]", i, dp[i])
             for j in range(i, len(s)):
                 print("s[i: j + 1]", i, j, s[i: j + 1])
+                # if s[:i+1] is true, ie - dp[i] is true, ie - the first part of the string is true from 0 to i
+                # and if the second part of the string s[i:j+1] is in wordDict, from i to j+1
+                # here we are testing j from i to len(string),
+                # ie - testing entire word eventually, s[:i+1] and s[i:len(s)]
                 if dp[i] and s[i: j + 1] in wordDict:
                     dp[j + 1] = True
                     print("dp[j + 1] was made True", j+1)

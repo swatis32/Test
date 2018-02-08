@@ -30,7 +30,7 @@ def countTriplets2(a, summ):
                 k = k - 1 # This decision is arbitrary, you can choose to also do j += 1 and vice versa below
             else:
                 # If the sum was bigger for this i, j, k, then it is guaranteed to be bigger for
-                # i, j + 1, k and i, j + 2, k etc. - ie - (k-j) times. Why? The array is sorted
+                # i, j + 1, k and i, j + 2, k etc. - ie (k-j) times. Why? The array is sorted
                 count = count + k - j
                 j = j + 1
 

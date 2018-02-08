@@ -25,12 +25,14 @@ class Solution(object):
             dic[i] += 1
 
         idx = 0
+        # find the index where we find the first char whose frequency of occurrence is less than k
         while idx < len(s) and dic[s[idx]] >= k:
             idx += 1
 
-        if idx == len(s):
+        if idx == len(s): # none of the chars in s have frequency less than k
             return len(s)
 
+        # some char was found whose frequency is < k, so break the problem into left and right and return max
         left = self.longestSubstring(s[0:idx], k)
         right = self.longestSubstring(s[idx:], k)
 

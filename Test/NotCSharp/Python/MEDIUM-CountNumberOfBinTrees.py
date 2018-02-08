@@ -30,14 +30,14 @@ class Solution(object):
         for i in range(2, n+1):
             # j plays the role of shifting elements in the children of the preorder
             '''
-                10                 vs           10                     10
+                10                 vs           10                     10           etc...
                 /\                              /\                     / \
             {11}  {12,13,14}             {11,12}  {13,14}    {11,12,13}  {14}
             the above will be for i = 4, 10 is the root of the tree, has 4 children, which can be shifted
             '''
             for j in range(0, i):
                 # t[5] = sum of each of the scenario trees above
-                # ie - t[5] = {t[1] * t[3]} + {t[2] * t[2]} + {t[3] * t[1]} + {t[4] * t[0]} + {t[0] * t[4]}
+                # ie - t[5] = {t[0] * t[4]} + {t[1] * t[3]} + {t[2] * t[2]} + {t[3] * t[1]} + {t[4] * t[0]}
                 t[i] += t[j] * t[i-j-1]
         return t[n]
 

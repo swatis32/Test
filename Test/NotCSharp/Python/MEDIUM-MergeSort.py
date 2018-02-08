@@ -25,7 +25,7 @@ class Solution(object):
         j = mid + 1
         k = low
 
-        while k <= high and i <=mid and j <=high:
+        while k <= high and i <= mid and j <= high:
             if aux[i] <= aux[j]:
                 # remember arr has index of k
                 self.arr[k] = aux[i]

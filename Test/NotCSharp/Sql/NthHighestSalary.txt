@@ -1,0 +1,9 @@
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+declare m int;
+set m = N-1;
+  RETURN (
+      # http://www.mysqltutorial.org/mysql-limit.aspx
+      select distinct salary from employee order by salary desc limit m, 1
+  );
+END

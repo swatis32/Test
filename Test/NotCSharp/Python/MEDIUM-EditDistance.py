@@ -14,7 +14,7 @@ def editDistDP(str1, str2, m, n):
         for j in range(n + 1):
 
             # If first string is empty, only option is to
-            # isnert all characters of second string
+            # insert all characters of second string
             if i == 0:
                 dp[i][j] = j  # Min. operations = j
 

@@ -46,10 +46,14 @@ class Solution2:
         :type k: int
         :rtype: List[int]
         """
+        # here dic just captures frequency of each element in the list
+        # key = element in the list, value = its frequency in the list
         dic = defaultdict(int)
         for i in nums:
             dic[i] += 1
 
+        # bucket essentially flips the equation
+        # it stores frequency as key, and the element of the list as the value
         bucket = defaultdict(list)
         for x, v in dic.items():
             if len(bucket[v]) == 0:
@@ -60,10 +64,13 @@ class Solution2:
         print("bucket", bucket)
         res = []
         while len(res) < k:
+            # find the max frequency
             maxk = max(bucket)
             print("maxk", maxk)
+            # add the element of the original list with max frequency to result
             res.extend(bucket[maxk])
             print("res", res)
+            # delete the bucket entry with the highest frequency so you can pick the next highest frequency
             del bucket[maxk]
 
         return res[0:k]

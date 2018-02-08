@@ -1,5 +1,5 @@
 # https://leetcode.com/problems/number-of-islands/description/
-# uses DFS, note the getnbors function - standardize on this function
+# uses DFS, note the getnbors function - standardize on this function for all nbor related problems
 class Solution(object):
     def __init__(self):
         self.count = 0

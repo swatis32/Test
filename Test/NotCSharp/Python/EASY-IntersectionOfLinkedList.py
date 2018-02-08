@@ -37,7 +37,7 @@ class Solution(object):
                 y = y.next
                 count += 1
 
-        while x != y and x != None and y != None:
+        while x != y and x is not None and y is not None:
             x = x.next
             y = y.next
 

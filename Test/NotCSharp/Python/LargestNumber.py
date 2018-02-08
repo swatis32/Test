@@ -20,6 +20,7 @@ class Solution:
 
         return result
 
+    # not optimal, dont use!!
     def largestNumber(self, nums):
         maximum = ''
         import itertools
