@@ -28,6 +28,7 @@ class Solution:
         if self.hascycle(numCourses):
             return []
 
+        # re-init visited array
         self.visited = [False] * numCourses
 
         for i in range(numCourses):

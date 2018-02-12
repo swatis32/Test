@@ -22,7 +22,9 @@ More questions to look into
 See questions solved in MS Protect book [solved by hand]
 https://leetcode.com/problems/merge-intervals/discuss/
 https://stackoverflow.com/questions/13704860/zip-lists-in-python
-
+https://www.python-course.eu/lambda.php
+https://www.youtube.com/watch?v=5GT5hYzjNoo [Djikstra's algo]
+https://anothercasualcoder.blogspot.com/ [Marcelo De Barro's coding blog]
 Newton's method
 https://www.youtube.com/watch?v=cOmAk82cr9M
 
@@ -32,5 +34,10 @@ https://www.youtube.com/watch?v=fMZMm_0ZhK4
 https://msdn.microsoft.com/en-us/library/aa480356.aspx
 https://www.youtube.com/watch?v=us0qySiUsGU [Google search type ahead]
 
-If you have time
+SQL
 https://sqlzoo.net/
+https://www.youtube.com/watch?v=wW4xcQ3FFp4 [Joins Basic]
+https://www.youtube.com/watch?v=GKGtOABAO9s [Joins advanced]
+Test repo has SQL questions
+https://www.analyticsvidhya.com/blog/2015/03/basics-sql-rdbms/?utm_content=bufferdb662&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+Difference between union and union all - union does a distinct AND SORTS the result based on ID. Union All just concatenates

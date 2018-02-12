@@ -2,6 +2,26 @@
 class Solution:
     # @param {integer[]} nums
     # @return {string}
+    # https://leetcode.com/problems/largest-number/description/
+    class Solution:
+        # @param {integer[]} nums
+        # @return {string}
+
+        def largestNumber(self, nums):
+            # define a lambda function that compares the concat of 2 strings
+            comp = lambda a, b: 1 if a + b > b + a else -1 if b + a > a + b else 0
+            # make nums as string inputs for each element of nums
+            nums = map(str, nums)
+            # sort nums such that we override the functionality of the comparator function in sort
+            # this is the most critical line
+            nums.sort(comp, reverse=True)
+            print(nums)
+            # concat the string, convert to nums, convert back to string and return
+            # why the need to convert to int and then back to string? because imagine a case like '00',
+            # the output should be 0, if we don't convert to int, we will get the output as '00'
+            return str(int(''.join([x for x in nums])))
+
+    ## wrong solution!!!
     def largestNumber2(self, nums):
         result = ""
         desc_list = [9,8,7,6,5,4,3,2,1]
