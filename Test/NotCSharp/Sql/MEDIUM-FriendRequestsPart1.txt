@@ -38,3 +38,4 @@ select round ### round to 2 decimal places as asked in the problem
 
     0) ### if the divisor is 0, then mark the result as 0
 ,2) as acceptance_rate
+

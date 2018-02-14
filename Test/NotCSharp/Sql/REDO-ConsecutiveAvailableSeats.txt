@@ -22,4 +22,3 @@ where
 (s.seat_id = s1.seat_id - 1 or s.seat_id - 1 = s1.seat_id)
 and
 (s.free = 1 and s1.free = 1)
-

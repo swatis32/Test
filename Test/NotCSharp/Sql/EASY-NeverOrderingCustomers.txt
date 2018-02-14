@@ -28,5 +28,6 @@ Using the above tables as example, return the following:
 | Max       |
 +-----------+
 
+
 select name as Customers from Customers where Id not in
 (select c.Id from Customers c inner join Orders o on c.Id = o.CustomerId)

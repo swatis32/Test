@@ -1,0 +1,10 @@
+There is a table that tracks every time a user turns a  feature on or off, with columns user_id, action ("on" or "off), date, and time. How many users turned the feature on today? How many users have ever turned the feature on? In a table that tracks the status of every user every day, how would you add today's data to it?
+
+Select count(distinct user_id) as onusers
+From actions
+Where date = date() and action='on';
+
+Select count(distinct user_id) as onusers
+From actions
+Where date <= date() and action='on';
+

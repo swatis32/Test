@@ -101,7 +101,7 @@ public class FloydWarshall
         while(pathMatrix[i,j] != i)
         {
           result.Add(pathMatrix[i,j]);
-          j = pathMatrix[i,j];
+          j = pathMatrix[i,j]; // old source is the new destination
           
         }
         

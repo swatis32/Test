@@ -1,0 +1,53 @@
+suppose you're given a table with company name and salary
+name salary
+msft  100
+goog  200
+goog  100
+...
+...
+
+
+create view v as select distinct(e.salary), count(*) as freq, e.name from emp e group by e.name, e.salary
+this creates the following
+salary      freq            name
+100         1               fb
+300         11              fb
+1100        1               fb
+100         5               goog
+200         7               goog
+300         1               goog
+500         1               goog
+600         1               goog
+100         7               msft
+200         1               msft
+300         1               msft
+400         1               msft
+500         1               msft
+
+
+there are 39 rows, hence 20th row would be median
+19 + 1 + 19
+select * from v order by salary
+
+salary       freq   name
+100             1   fb
+100             5   goog
+100             7   msft
+200             7   goog ---> median is 200
+200             1   msft
+300             11  fb
+300             1   goog
+300             1   msft
+400             1   msft
+500             1   goog
+500             1   msft
+600             1   goog
+1100            1   fb
+
+now that we have a freq histogram view of the salaries - look at MedianOfNumbersGivenFrequency.txt if this is unclear!
+select v.name, avg(v.salary) from v where v.freq >=
+abs(
+(select sum(v1.freq) from v v1 where v1.salary <= v.salary)
+-
+(select sum(v2.freq) from v v2 where v2.salary >= v.salary)
+)

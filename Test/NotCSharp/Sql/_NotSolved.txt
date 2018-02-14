@@ -1,0 +1,12 @@
+TripsAndUsers
+FindCumulativeSalaryOfEmployee
+AverageSalaryDeptsVsCompany
+
+SQL
+https://sqlzoo.net/
+https://www.youtube.com/watch?v=wW4xcQ3FFp4 [Joins Basic]
+https://www.youtube.com/watch?v=GKGtOABAO9s [Joins advanced]
+Test repo has SQL questions
+https://www.analyticsvidhya.com/blog/2015/03/basics-sql-rdbms/?utm_content=bufferdb662&utm_medium=social&utm_source=facebook.com&utm_campaign=buffer
+Difference between union and union all - union does a distinct AND SORTS the result based on ID. Union All just concatenates
+https://stackoverflow.com/questions/49925/what-is-the-difference-between-union-and-union-all

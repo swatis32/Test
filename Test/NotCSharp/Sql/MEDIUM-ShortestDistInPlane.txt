@@ -16,7 +16,7 @@ SELECT
 FROM
     point_2d p1
         JOIN
-    point_2d p2 ON p1.x != p2.x OR p1.y != p2.y  ### atleast 1 of x or y coordinate should be diff for the point to not be the same
+    point_2d p2 ON p1.x != p2.x OR p1.y != p2.y  ### no 2 x coordinates can be the same, no 2 y coordinates can be the same
 ;
 
 Note: - The condition 'p1.x != p2.x OR p2.y != p2.y' is to avoid calculating the distance of a point with itself. Otherwise, the minimum distance will be always zero.
