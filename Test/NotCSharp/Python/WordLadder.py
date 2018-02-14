@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/word-ladder-length-of-shortest-chain-to-reach-a-target-word/
 # https://leetcode.com/problems/word-ladder/description/
+# this solution is close to correct, however, it doesnt give the optimal number of hops
 class Solution(object):
     def __init__(self):
         self.count = 0

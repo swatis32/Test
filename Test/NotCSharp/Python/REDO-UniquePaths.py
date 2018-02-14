@@ -48,6 +48,7 @@ class Solution:
         if self.mat[m][n] is not -1:
             return self.mat[m][n]
 
+        # ways to reach from m,n to 0,0 is to sum ways going down + going right
         self.mat[m][n] = self.helper(m - 1, n) + self.helper(m, n - 1)
         return self.mat[m][n]
 
