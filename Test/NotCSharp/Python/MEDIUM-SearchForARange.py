@@ -11,7 +11,8 @@ class Solution:
         right = self.binsearchright(0, len(nums) - 1, nums, target)
         print("left", left)
         print("right", right)
-        if left <= right: return [left, right]
+        if left <= right:
+            return [left, right]
 
         return [-1, -1]
 

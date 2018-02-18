@@ -34,13 +34,13 @@ class Solution(object):
         nbors = self.getnbors(grid, i, j)
         # print("for i j", i, j)
         # print("nbors are", nbors)
-        for i in nbors:
-            if self.visited[i[0]][i[1]] is True:
+        for n in nbors:
+            if self.visited[n[0]][n[1]] is True:
                 continue
 
-            self.visited[i[0]][i[1]] = True
-            if grid[i[0]][i[1]] == '1':
-                self.helper(grid, i[0], i[1])
+            self.visited[n[0]][n[1]] = True
+            if grid[n[0]][n[1]] == '1':
+                self.helper(grid, n[0], n[1])
 
     def getnbors(self, grid, x, y):
         temp = []

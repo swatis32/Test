@@ -20,7 +20,7 @@ def uglyNumber(n):
 
 #1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15
 tic = time.time()
-print(uglyNumber(500))
+print(uglyNumber(1000))
 toc = time.time()
 print("My solution took: " + str((toc - tic)* 1000))
 
@@ -65,6 +65,6 @@ def getNthUglyNo(n):
     return ugly[-1]
 
 tic = time.time()
-print(getNthUglyNo(500))
+print(getNthUglyNo(1000))
 toc = time.time()
 print("G4G solution took: " + str((toc - tic)* 1000))

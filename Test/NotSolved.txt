@@ -4,8 +4,6 @@ https://www.youtube.com/watch?v=AXjmTQ8LEoI [Tries - do deletion in c#]
 http://www.geeksforgeeks.org/bridge-in-a-graph/
 http://www.geeksforgeeks.org/?p=12635
 https://discuss.leetcode.com/topic/31162/mergesort-solution/11
-https://leetcode.com/problems/word-search/description/
-https://leetcode.com/problems/perfect-squares/description/
 https://www.youtube.com/watch?v=P8Xa2BitN3I (look at 6:25)
 http://www.geeksforgeeks.org/?p=12635
 https://www.hackerrank.com/challenges/ctci-merge-sort/problem
@@ -13,6 +11,8 @@ https://www.hackerrank.com/challenges/ctci-coin-change/problem
 http://www.geeksforgeeks.org/generate-all-possible-sorted-arrays-from-alternate-elements-of-two-given-arrays/
 Look up set operations in file SmallestNumberSubset.py
 http://www.geeksforgeeks.org/np-completeness-set-1/
+https://www.youtube.com/watch?v=2cyryXRmN5Q&t=920s [solvable/unsolvable problem]
+https://www.youtube.com/watch?v=YX40hbAHx3s [P vs NP]
 https://jeffknupp.com/blog/2012/11/13/is-python-callbyvalue-or-callbyreference-neither/
 https://stackoverflow.com/questions/12567329/multidimensional-array-vs
 https://www.youtube.com/watch?v=ajrtAuDg3yw [Python slicing]
@@ -25,9 +25,16 @@ https://www.python-course.eu/lambda.php
 https://www.youtube.com/watch?v=5GT5hYzjNoo [Djikstra's algo]
 https://anothercasualcoder.blogspot.com/ [Marcelo De Barro's coding blog]
 https://www.youtube.com/watch?v=cOmAk82cr9M [Newton's method]
+https://www.youtube.com/watch?v=QJ_7S1p0Kj8 [Priority queue]
+https://www.youtube.com/watch?v=40iljMQmqmY [heap explanation]
 
 System design
 https://www.youtube.com/watch?v=DSGsa0pu8-k [Parking lot]
 https://www.youtube.com/watch?v=fMZMm_0ZhK4
 https://msdn.microsoft.com/en-us/library/aa480356.aspx
 https://www.youtube.com/watch?v=us0qySiUsGU [Google search type ahead]
+https://docs.google.com/document/d/13peQyapxtkfPLcqFC2IYL-UkVdpbV02urGJGJSdNS7g/edit [Microservice intro]
+
+Misc
+https://www.geeksforgeeks.org/little-and-big-endian-mystery/ [used in network byte order of packets, src and dest must use same endian]
+https://practice.geeksforgeeks.org/problems/thrashing-in-os/ [happens when there are many page faults and the os spends majority time switching pages in and out of RAM]
