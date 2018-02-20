@@ -28,7 +28,7 @@ class Solution:
         m = rows
         n = columns
         6 3 1
-        3 1 1 <-- this index is mat[1][0]
+        3 2 1 <-- this index is mat[1][0]
         1 1 0
         Here we have an inverted matrix in which we store our results
         matrix is [[0, 1, 1], [1, 2, 3], [1, 3, 6]]

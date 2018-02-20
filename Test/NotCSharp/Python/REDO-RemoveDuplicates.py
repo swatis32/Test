@@ -25,8 +25,11 @@ class Solution:
     def removeDuplicates2(self, nums):
         if len(nums) == 0:
             return nums
+        # this i acts like our new idx
         i = 0
         for j in range(1, len(nums)):
+            # only if new element in consideration is not equal to old element
+            # only then increase our valid idx and allow this new element in consideration to be replaced
             if nums[j] != nums[i]:
                 i +=1
                 nums[i] = nums[j]

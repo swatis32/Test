@@ -43,13 +43,14 @@ def palindrome_partition(arr):
     print("The minimum number of partitions required are")
     return pp[0][lenarr - 1]
 
-
+'''
 print(palindrome_partition('abcbm'))
 print(palindrome_partition('aaaaa'))
 print(palindrome_partition('nitin'))
 print(palindrome_partition('shasha'))
 print(palindrome_partition('madame'))
 print(palindrome_partition('aabcac'))
+'''
 
 # O(n2) solution is defined below
 def pal_partition(arr):
@@ -98,6 +99,7 @@ def pal_partition(arr):
     print("Palindrome partition 2 result")
     return cuts[len(arr) - 1]
 
+'''
 print(pal_partition('banana'))
 print(pal_partition('abcbm'))
 print(pal_partition('aaaaa'))
@@ -105,6 +107,7 @@ print(pal_partition('nitin'))
 print(pal_partition('shasha'))
 print(pal_partition('madame'))
 print(pal_partition('aabcac'))
+'''
 
 # Solution number 3, uses dfs
 # https://leetcode.com/problems/palindrome-partitioning/discuss/
@@ -131,8 +134,12 @@ class Solution:
                 if self.ispalindrome(s, pos, i):
                     self.l.append(s[pos:i + 1])
                     self.dfs(i + 1, s)
+                    # remove last element from l
                     self.l = self.l[0:len(self.l) - 1]
                 i += 1
 
     def ispalindrome(self, s, i, j):
         return s[i:j + 1] == ''.join(list(reversed(s[i:j + 1])))
+
+s = Solution()
+s.partition("banana")

@@ -20,7 +20,9 @@ def optimal_strategy(arr):
     l = 1
     for i in range(len_arr):
         for j in range(len_arr):
+            # there's only 1 number in the game
             if i == j:
+                # first player always wins by picking up the number, as a result player 2 gets nothing
                 res[i][j] = (arr[i], 0)
 
     while l <= len_arr:
@@ -34,7 +36,10 @@ def optimal_strategy(arr):
             # choosing starting element (i) and then choosing the best you can do with [i+1, j] (exclude the ith)
             # OR choosing the ending element (j) and then choosing the best you can do with [i, j-1] (exclude the jth)
             first = max([arr[i] + bottom[1], arr[j] + left[1]])
-            second = sum(arr[i:j+1]) - first
+            if arr[i] + bottom[1] > arr[j] + left[1]:
+                second = bottom[0]
+            else:
+                second = left[0]
             res[i][j] = (first, second)
             i += 1
             j += 1

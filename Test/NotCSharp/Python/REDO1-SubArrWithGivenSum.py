@@ -1,4 +1,5 @@
 # http://www.geeksforgeeks.org/find-subarray-with-given-sum/
+# not optimal, see below
 def subarray_with_given_sum(summ, arr):
     if summ in arr:
         return summ

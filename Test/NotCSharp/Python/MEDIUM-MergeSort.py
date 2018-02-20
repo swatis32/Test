@@ -29,13 +29,13 @@ class Solution(object):
             if aux[i] <= aux[j]:
                 # remember arr has index of k
                 self.arr[k] = aux[i]
-                i +=1
+                i += 1
             else:
                 # remember arr has index of k
                 self.arr[k] = aux[j]
-                j +=1
+                j += 1
             # k always increases no matter what
-            k +=1
+            k += 1
 
         while i <= mid:
             # remember arr has index of k

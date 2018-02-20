@@ -76,7 +76,9 @@ class Solution(object):
                 # we can make '*' represent no character in which case we check if "xay" matches "x?y",
                 # which we get from arr[i][j-1] (j-1 means we remove last element from pattern, ie - remove '*')
                 # OR
-                # we make '*' represent 1 or more character, ie - "xa" vs "x?y*", which is arr[i-1][j]
+                # we make '*' represent 1 or more character, ie - "xa" vs "x?y", which is arr[i-1][j-1]
+                # OR
+                # we make '*' eat up 1 character but keep '*' to eat up more characters - 'xa' vs 'x?y*' or arr[i-1][j]
                 # there's no need to find arr[i-2][j], arr[i-3][j] etc.... because the above would give the result for all
                 elif p[j - 1] == '*':
                     arr[i][j] = arr[i - 1][j] or arr[i][j - 1]
