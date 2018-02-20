@@ -26,6 +26,8 @@ class Solution:
             # print("inorder[idx+1:]", inorder[idx+1:])
 
             root.left = self.helper(preorder, inorder[0:idx])
+            # remember the root.right will be using inorder[idx+1:] and NOT inorder[idx:]
+            # why? because idx is the index of root, which has already been considered
             root.right = self.helper(preorder, inorder[idx + 1:])
 
             return root

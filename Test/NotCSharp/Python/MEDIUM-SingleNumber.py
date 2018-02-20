@@ -16,3 +16,10 @@ class Solution(object):
         for i in range(len(nums)):
             res = res ^ nums[i]
         return res
+
+s = Solution()
+print(s.singleNumber([1,1,2,2,3]))
+# wont work for 2 single numbers
+print(s.singleNumber([1,1,2,2,3,5]))
+# for that we have to see:
+# https://www.geeksforgeeks.org/find-two-non-repeating-elements-in-an-array-of-repeating-elements/

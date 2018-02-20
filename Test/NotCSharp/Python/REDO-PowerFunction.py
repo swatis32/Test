@@ -18,6 +18,7 @@ class Solution(object):
 
         # this was an important condition, what if n is less than 0
         if n < 0:
+            # remember to make n as -n because now you've transferred the negative to 'x'
             n = -n
             x = 1 / x
 

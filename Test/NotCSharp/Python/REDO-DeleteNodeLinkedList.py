@@ -11,7 +11,7 @@ class Solution(object):
         :type node: ListNode
         :rtype: void Do not return anything, modify node in-place instead.
         """
-        if node.next == None:
+        if node.next is None:
             return
         node.val = node.next.val
         node.next = node.next.next
