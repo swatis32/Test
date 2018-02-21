@@ -16,6 +16,7 @@ class Solution:
         :type prerequisites: List[List[int]]
         :rtype: List[int]
         """
+        # building the graph itself
         for i in prerequisites:
             if i[1] not in self.edges:
                 self.edges[i[1]] = [i[0]]
@@ -25,6 +26,7 @@ class Solution:
         self.visited = [False] * numCourses
         self.recstack = [False] * numCourses
         print("edges are", self.edges)
+        # if there's a cycle in the graph, then no courses can be recommended
         if self.hascycle(numCourses):
             return []
 

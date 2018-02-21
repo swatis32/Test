@@ -31,7 +31,7 @@ class Solution(object):
                         3       T   
                         Consider element arr[2][3], it cant rely on i+1,j-1
                         '''
-                        # YOU HAVE NO SOUTHEAST DIAGONAL ELEMENTS TO DEPEND ON
+                        # YOU HAVE NO SOUTHWEST DIAGONAL ELEMENTS TO DEPEND ON
                         arr[i][j] = True
                     else:
                         arr[i][j] = arr[i + 1][j - 1]
