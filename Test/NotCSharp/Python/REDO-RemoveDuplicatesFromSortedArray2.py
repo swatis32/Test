@@ -7,6 +7,7 @@ class Solution:
         """
         # this is the new index of the array
         idx = 0
+        # i is the current element under consideration
         for i in range(0, len(nums)):
             # we allow modification of nums only iff:
             # idx is less than 2 [ie - if there were only 2 elements]
