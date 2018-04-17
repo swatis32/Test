@@ -18,15 +18,11 @@ Given the Employee table, write a SQL query that finds out managers with at leas
 | John  |
 +-------+
 
-SELECT
-    Name
-FROM
-    Employee AS t1 JOIN
-    (SELECT
-        ManagerId
-    FROM
-        Employee
-    GROUP BY ManagerId
-    HAVING COUNT(ManagerId) >= 5) AS t2
-    ON t1.Id = t2.ManagerId
-;
+SELECT Name FROM Employee AS t1 JOIN
+(SELECT ManagerId FROM Employee GROUP BY ManagerId HAVING COUNT(ManagerId) >= 5) AS t2
+ON t1.Id = t2.ManagerId
+
+# Find all manager Ids that have atleast 5 count - ie - SELECT ManagerId FROM Employee GROUP BY ManagerId HAVING COUNT(ManagerId) >= 5
+# call this t2
+# t2 has all the required manager Ids. We just need to display their names
+# that's where t1 comes in, we just match their Ids, ie, t1's Id should match t2's Id and we call out their names
