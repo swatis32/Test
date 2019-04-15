@@ -38,3 +38,6 @@ https://docs.google.com/document/d/1Iblmw70E4oYS9M3EsxFj6v4Ki3qhzJxWxXI2Qdnc4XI/
 Misc
 https://www.geeksforgeeks.org/little-and-big-endian-mystery/ [used in network byte order of packets, src and dest must use same endian]
 https://practice.geeksforgeeks.org/problems/thrashing-in-os/ [happens when there are many page faults and the os spends majority time switching pages in and out of RAM]
+
+Data science:
+https://docs.google.com/document/d/16DhMxmHJXL7-0PrTBxomyhAjCpqugskjCPjDPzbs2zo/edit (from here go to redo.txt)
