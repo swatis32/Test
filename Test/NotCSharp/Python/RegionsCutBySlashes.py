@@ -8,7 +8,7 @@ class Solution(object):
         rows = len(grid)
         cols = len(grid[0])
         # keep in mind -- g = [[0 for x in range(cols * 3)]] * (rows * 3) is NOT the same as below
-        # why? https://stackoverflow.com/questions/6007881/what-does-the-0x-syntax-do-in-python
+        # why? https://stackoverflow.com/questions/6007881/what-does-the-0x-syntax-do-in-python 
         g = [[0 for x in range(cols * 3)] for y in range(rows * 3)]
         
         for i in range(rows):
