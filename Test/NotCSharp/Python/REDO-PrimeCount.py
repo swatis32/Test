@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/count-primes/
+# look into time complexity for this
 class Solution(object):
     # not efficient
     def countPrimes2(self, n):
