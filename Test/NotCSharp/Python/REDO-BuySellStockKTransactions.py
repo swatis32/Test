@@ -14,6 +14,8 @@ def buy_sell(k, stocks):
                 continue
 
             maxi = 0
+            tmpMaxi = 0
+            dayPurchased = -1
             for m in range(j):
                 # m is the number of days from 0 to j-1
                 # if you decide to sell on day j for a stock you bought on day m, then profit from that sale is
@@ -22,11 +24,14 @@ def buy_sell(k, stocks):
                 # max always takes in an iterable! remember - hence we give a list below
                 # do max between earlier max, x and the result of doing no transaction arr[i][j-1]
                 # (same state as j-1 th day)
-                maxi = max([arr[i][j-1], x, maxi])
+                tmpMaxi = maxi
+                maxi = max([arr[i][j-1], x, tmpMaxi])
+                if maxi > tmpMaxi:
+                    dayPurchased = m
             arr[i][j] = maxi
             # if your profit increased on that day - ie - you made a transaction, else you would be in prev state
-            if maxi > int(arr[i][j-1]) and arr[i][j] != arr[i-1][j]:
-                print("Bought stock on day {}".format(j-1))
+            if arr[i][j] > int(arr[i][j-1]) and arr[i][j] != arr[i-1][j]:
+                print("Bought stock on day {}".format(dayPurchased))
                 print("Sold stock on day {}".format(j))
 
     # bottom right cell is the answer for upto k transactions on day len_stocks
