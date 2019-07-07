@@ -32,6 +32,8 @@ https://www.youtube.com/watch?v=40iljMQmqmY [heap explanation]
 https://leetcode.com/problems/reveal-cards-in-increasing-order/
 https://searchenterprisedesktop.techtarget.com/definition/device-driver
 https://leetcode.com/discuss/interview-question/124638/what-happens-in-the-background-from-the-time-you-press-the-Power-button-until-the-Linux-login-prompt-appears
+https://www.geeksforgeeks.org/copy-python-deep-copy-shallow-copy/
+https://www.python-course.eu/passing_arguments.php
 
 System design
 https://www.youtube.com/watch?v=DSGsa0pu8-k [Parking lot]
