@@ -13,20 +13,17 @@ class Solution(object):
         :rtype: int
         """
         count = 0
-        for num in self.nums:
+        index = []
+        for idx, num in enumerate(self.nums):
             if num == target:
                 count +=1
+                index.append(idx)
         
         # now count holds the number of times we have seen that target number
         # the idea is that if we were to do random.randrange(count) - we will get a number between 0 and count
         # say count was 3, then we get a number from [0,1,2] with equal likelihood
         r = random.randrange(count)
-        for idx, num in enumerate(self.nums):
-            if num == target:
-                if r == 0:
-                    return idx
-                else:
-                    r -= 1        
+        return index[r]
 
 
 # Your Solution object will be instantiated and called as such:
