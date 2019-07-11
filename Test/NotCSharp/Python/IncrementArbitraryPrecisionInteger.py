@@ -1,3 +1,4 @@
+# section 5.2 of the EPI book - increasing a number by 1 
 def incrementInt(arr):
     i = len(arr)-1
     if i < 0:
