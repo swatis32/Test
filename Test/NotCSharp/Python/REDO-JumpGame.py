@@ -3,6 +3,7 @@
 
 from os import sys
 class Solution(object):
+    # solution also available in section 5.4 in EPI
     def canJump(self, nums):
         """
         :type nums: List[int]
@@ -22,13 +23,25 @@ class Solution(object):
         maxJump = 0
         maxIdx = len(nums) - 1
         for i in range(len(nums)):
+            # if the furthest we can advance is not good enough, ie to reach "i", let alone end of array, then return false
             if maxJump < i:
                 return False
+            # the furthest we can advance from index i is i + nums[i]
             maxJump = max([maxJump, i + nums[i]])
         return True
 
-        # return self.helper(nums, 0, nums[0])
+        # return self.solve(nums, 0, 0)
         # return self.minJumpFunc(nums)
+
+    # this should also work, but is a worse solution as it uses stack space
+    def solve(self, nums, idx, mj):
+        # the furthest we can go given that we are at index idx is idx + nums[idx]
+        # if we cannot even reach the current idx, we wont be able to move ahead
+        if mj < idx:
+            return False
+        if idx < len(nums) - 1:
+            return self.solve(nums, idx+1, max(mj, idx + nums[idx]))
+        return True
 
     # like Longest Inc subsequence problem, this is also o(n2) so its exceeding the time limit
     def minJumpFunc(self, nums):
@@ -53,18 +66,4 @@ class Solution(object):
             return True
         return False
 
-    # RECURSION DEPTH IS EXCEEDING FOR THIS SOLUTION, HOWEVER, IT IS A CORRECT SOLUTION
-    def helper(self, nums, idx, n):
-
-        if n >= len(nums) - idx:
-            return True
-
-        temp = idx + n
-        if temp == idx:
-            return False
-        idx = temp
-        if idx == len(nums) - 1:
-            return True
-
-        return self.helper(nums, idx, nums[idx])
 
