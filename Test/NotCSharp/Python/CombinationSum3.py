@@ -29,4 +29,6 @@ class Solution(object):
             if i not in arr:
                 arr.add(i)
                 self.helper(k, n-i, arr)
+                # discard does not throw error if element is not found
+                # remove does throw error if element is not found
                 arr.discard(i)
