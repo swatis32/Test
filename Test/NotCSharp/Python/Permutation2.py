@@ -64,3 +64,5 @@ class Solution(object):
                 res.append([first] + j)
                 
         return res
+
+#https://www.youtube.com/watch?time_continue=1&v=nYFd7VHKyWQ
