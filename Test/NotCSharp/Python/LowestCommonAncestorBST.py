@@ -15,14 +15,14 @@ class Solution(object):
         """
         if not root or root == p or root == q:
             return root
-        # p can be smaller or bigger than q, so need to check both conditions
+        # we dont know whether p is bigger or q, so we need to check both conditions
         if (p.val <= root.val <= q.val) or (q.val <= root.val <= p.val):
             return root
-        left = self.lowestCommonAncestor(root.left, p, q)
-        right = self.lowestCommonAncestor(root.right, p, q)
-        
-        if not left:
-            return right
-        if not right:
-            return left
-        return None
+        if p.val <= root.val and q.val <= root.val:
+            left = self.lowestCommonAncestor(root.left, p, q)
+            right = None # no need to evaluate RHS as root is bigger than both p,q
+        if p.val >= root.val and q.val >= root.val:
+            right = self.lowestCommonAncestor(root.right, p, q)
+            left = None # no need to evaluate LHS as root is smaller than both p,q
+        if not left: return right
+        if not right: return left
