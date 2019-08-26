@@ -24,5 +24,7 @@ class Solution(object):
         if p.val >= root.val and q.val >= root.val:
             right = self.lowestCommonAncestor(root.right, p, q)
             left = None # no need to evaluate LHS as root is smaller than both p,q
+        if left and right: return root
         if not left: return right
         if not right: return left
+        return None
