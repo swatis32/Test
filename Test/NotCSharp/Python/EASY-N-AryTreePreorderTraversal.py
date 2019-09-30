@@ -19,5 +19,5 @@ class Solution:
             curr_node = node.pop(0)
             lst.append(curr_node.val)
             for i in curr_node.children[::-1]:
-                node.append(i)
+                node.insert(0, i)
         return lst
